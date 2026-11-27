@@ -1,7 +1,9 @@
+import subprocess
+
+
 def addition(a, b):
     return a + b
 
-import os
 
 def lister(dossier):
-    os.system("ls " + dossier)
+    subprocess.run(["ls", dossier])
